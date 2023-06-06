@@ -4,5 +4,5 @@
 
 """Program that print the alphabet in lowercase, not followed by a
 new line."""
-for l in range(97, 123):
-    print("{}".format(chr(l)), end="")
+for my_l in range(97, 123):
+    print("{}".format(chr(my_l)), end="")
