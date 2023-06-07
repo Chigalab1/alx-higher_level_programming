@@ -22,4 +22,5 @@ int check_cycle(listint_t *list)
 		if (s == f)
 			return (1);
 	}
+	return (0);
 }
