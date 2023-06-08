@@ -1,1 +1,1 @@
-welcome to python
+0x02. Python - import & modules
