@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-""" delete an item at a specific position in
+    """ delete an item at a specific position in
 a list."""
 
 def delete_at(my_list=[], idx=0):
