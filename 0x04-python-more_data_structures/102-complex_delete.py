@@ -3,7 +3,7 @@ def complex_delete(a_dictionary, value):
     my_keys = list(a_dictionary.keys())
 
     for dic in my_keys:
-        if dic == a_dictionary.get(dic):
+        if value == a_dictionary.get(dic):
             del a_dictionary[dic]
 
     return (a_dictionary)
