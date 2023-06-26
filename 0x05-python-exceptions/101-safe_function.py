@@ -2,9 +2,9 @@
 
 import sys
 
+
 def safe_function(fct, *args):
     """function that executes a function safely"""
-
     try:
         res = fct(*args)
         return (result)
