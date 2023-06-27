@@ -5,4 +5,5 @@
 
 
 class square:
+    """Rep a square"""
     pass
