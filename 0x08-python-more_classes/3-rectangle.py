@@ -4,6 +4,7 @@
 
 class Rectngle:
     """ class rectangle"""
+
     def __init__(self, width=0, height=0):
         """ initialize the rectangle"""
         self.width = width
@@ -57,4 +58,11 @@ class Rectngle:
         if self.__width is 0 or self.__height is 0:
             return ""
 
-        return ("n".join["".join(["#" for a in range(self.__width)]) for b in range(self.__height)]))
+        ret = []
+        for i in range(self.__height):
+            for j in range(self.__width):
+                ret.append('#')
+            if i != self.__height - 1:
+                ret.append("\n")
+
+        return ("".join(ret))
