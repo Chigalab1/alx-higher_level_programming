@@ -5,11 +5,18 @@
 class Rectangle:
     """Represent a rectangle."""
 
-    count_instances = 0
+    """number_of_instances (int): The number of Rectangle instances"""
+
+    number_of_instances = 0
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle"""
-        type(self).count_instances += 1
+        """Initialize a new Rectangle.
+
+        Args:
+            width (int): The width of the new rectangle.
+            height (int): The height of the new rectangle.
+        """
+        type(self).number_of_instances += 1
         self.width = width
         self.height = height
 
@@ -48,30 +55,34 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return (0)
 
-        return ((self.__height * 2) + (self.__width * 2))
+        return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Return the rectangle with the character # """
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
+        """
         if self.__width == 0 or self.__height == 0:
             return ("")
 
-        my_rect = []
+        rectngl = []
         for i in range(self.__height):
             for j in range(self.__width):
-                my_rect.append('#')
+                rectngl.append('#')
             if i != self.__height - 1:
-                my_rect.append("\n")
+                rectngl.append("\n")
 
-        return ("".join(my_rect))
+        return ("".join(rectngl))
 
     def __repr__(self):
         """Return the string representation of the Rectangle."""
 
-        my_rect = "Rectangle(" + str(self.__width)
-        my_rect += ", " + str(self.__height) + ")"
-        return (my_rect)
+        rectngl = "Rectangle(" + str(self.__width)
+        rectngl += ", " + str(self.__height) + ")"
+        return (rectngl)
 
     def __del__(self):
-        """Print a farewell message """
-        type(self).count_instances -= 1
+        """ Decrements the number_of_instances class attribute and
+        prints a farewell message."""
+        type(self).number_of_instances -= 1
         print("Bye rectangle...")
