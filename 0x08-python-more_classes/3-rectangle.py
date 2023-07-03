@@ -2,7 +2,7 @@
 """ defines a rectangle """
 
 
-class Rectngle:
+class Rectangle:
     """ class rectangle"""
 
     def __init__(self, width=0, height=0):
