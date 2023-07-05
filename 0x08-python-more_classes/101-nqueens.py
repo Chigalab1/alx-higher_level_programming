@@ -60,6 +60,7 @@ def xout(my_board, row, col):
         my_board[k][j]
         j -= 1
 
+
     for k in range(row - 1, -1, -1):
         if j >= len(my_board):
             break
