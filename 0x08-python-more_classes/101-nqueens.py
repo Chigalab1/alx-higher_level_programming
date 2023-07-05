@@ -30,7 +30,7 @@ def get_solution(my_board):
     return (solution)
 
 
-def xout(board, row, col):
+def xout(my_board, row, col):
     """X out spots on a chessboard"""
 
     for j in range(col + 1, len(my_board)):
@@ -70,7 +70,7 @@ def xout(board, row, col):
     for k in range(row + 1, len(my_board)):
         if j < 0:
             break
-        board[k][j] = "x"
+        my_board[k][j] = "x"
         j -= 1
 
 
@@ -102,7 +102,7 @@ if __name__ == "__main__":
         print("N must be at least 4")
         sys.exit(1)
 
-    my_board = init_board(int(sys.argv[1]))
-    solutions = recursive_solve(board, 0, 0, [])
+    my_board = init_my_board(int(sys.argv[1]))
+    solutions = recursive_solve(my_board, 0, 0, [])
     for sol in solutions:
         print(sol)
