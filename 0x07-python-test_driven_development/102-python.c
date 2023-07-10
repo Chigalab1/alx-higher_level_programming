@@ -1,7 +1,7 @@
 #include "Python.h"
 
 /**
- * print_python_string - function that prints python string
+ * print_python_string - function that prints Python strings.
  * @p: A PyObject string object.
  */
 void print_python_string(PyObject *p)
@@ -26,4 +26,3 @@ void print_python_string(PyObject *p)
 	printf("  length: %ld\n", l);
 	printf("  value: %ls\n", PyUnicode_AsWideCharString(p, &l));
 }
-
