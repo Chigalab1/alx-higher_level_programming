@@ -19,7 +19,7 @@ from models.square import Square
 
 
 class TestBase_instantiation(unittest.TestCase):
-    """Unittests for testing instantiation of the Base class."""
+    """Unittests for testing instantiation of Base class."""
 
     def test_no_arg(self):
         b1 = Base()
@@ -156,7 +156,7 @@ class TestBase_save_to_file(unittest.TestCase):
 
     @classmethod
     def tearDown(self):
-        """Delete any created files."""
+        """Class to Delete any created files."""
         try:
             os.remove("Rectangle.json")
         except IOError:
@@ -230,7 +230,7 @@ class TestBase_save_to_file(unittest.TestCase):
 
 
 class TestBase_from_json_string(unittest.TestCase):
-    """Unittests for testing from_json_string method of Base class."""
+    """Unittests for testing from_json_string."""
 
     def test_from_json_string_type(self):
         list_input = [{"id": 89, "width": 10, "height": 4}]
@@ -336,7 +336,7 @@ class TestBase_create(unittest.TestCase):
 
 
 class TestBase_load_from_file(unittest.TestCase):
-    """Unittests for testing load_from_file_method of Base class."""
+    """Unittests for testing load_from_file_method."""
 
     @classmethod
     def tearDown(self):
@@ -402,11 +402,11 @@ class TestBase_load_from_file(unittest.TestCase):
 
 
 class TestBase_save_to_file_csv(unittest.TestCase):
-    """Unittests for testing save_to_file_csv method of Base class."""
+    """Unittests for testing save_to_file_csv."""
 
     @classmethod
     def tearDown(self):
-        """Delete any created files."""
+        """class to Delete any created files."""
         try:
             os.remove("Rectangle.csv")
         except IOError:
@@ -480,11 +480,11 @@ class TestBase_save_to_file_csv(unittest.TestCase):
 
 
 class TestBase_load_from_file_csv(unittest.TestCase):
-    """Unittests for testing load_from_file_csv method of Base class."""
+    """Unittests for testing load_from_file_csv."""
 
     @classmethod
     def tearDown(self):
-        """Delete any created files."""
+        """class that Delete any created files."""
         try:
             os.remove("Rectangle.csv")
         except IOError:

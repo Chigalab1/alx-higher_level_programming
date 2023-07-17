@@ -345,13 +345,7 @@ class TestSquare_stdout(unittest.TestCase):
 
     @staticmethod
     def capture_stdout(sq, method):
-        """Captures and returns text printed to stdout.
-
-        Args:
-            sq (Square): The Square ot print to stdout.
-            method (str): The method to run on sq.
-        Returns:
-            The text printed to stdout by calling method on sq.
+        """Captures and returns text printed to stdout..
         """
         capture = io.StringIO()
         sys.stdout = capture
@@ -536,7 +530,7 @@ class TestSquare_update_args(unittest.TestCase):
 
 
 class TestSquare_update_kwargs(unittest.TestCase):
-    """Unittests for testing update kwargs method of Square class."""
+    """class Unittests for testing update kwargs method of Square."""
 
     def test_update_kwargs_one(self):
         s = Square(10, 10, 10, 10)
@@ -638,7 +632,7 @@ class TestSquare_update_kwargs(unittest.TestCase):
 
 
 class TestSquare_to_dictionary(unittest.TestCase):
-    """Unittests for testing to_dictionary method of the Square class."""
+    """Unittests for testing to_dictionary method of the Square."""
 
     def test_to_dictionary_output(self):
         s = Square(10, 2, 1, 1)

@@ -112,7 +112,7 @@ class TestRectangle_instantiation(unittest.TestCase):
 
 
 class TestRectangle_width(unittest.TestCase):
-    """Unittests for testing initialization of Rectangle width attribute."""
+    """Unittests for testing initialization of Rectangle"""
 
     def test_None_width(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -188,7 +188,7 @@ class TestRectangle_width(unittest.TestCase):
 
 
 class TestRectangle_height(unittest.TestCase):
-    """Unittests for testing initialization of Rectangle height attribute."""
+    """class Unittests for testing initialization of Rectangle height attribute."""
 
     def test_None_height(self):
         with self.assertRaisesRegex(TypeError, "height must be an integer"):
@@ -332,7 +332,7 @@ class TestRectangle_x(unittest.TestCase):
 
 
 class TestRectangle_y(unittest.TestCase):
-    """Unittests for testing initialization of Rectangle y attribute."""
+    """class Unittests for testing initialization of Rectangle y attribute."""
 
     def test_None_y(self):
         with self.assertRaisesRegex(TypeError, "y must be an integer"):
@@ -400,7 +400,7 @@ class TestRectangle_y(unittest.TestCase):
 
 
 class TestRectangle_order_of_initialization(unittest.TestCase):
-    """Unittests for testing Rectangle order of attribute initialization."""
+    """class Unittests for testing Rectangle order of attribute initialization."""
 
     def test_width_before_height(self):
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
@@ -428,7 +428,7 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
 
 
 class TestRectangle_area(unittest.TestCase):
-    """Unittests for testing the area method of the Rectangle class."""
+    """Unittests for testing the area method of a Rectangle class."""
 
     def test_area_small(self):
         r = Rectangle(10, 2, 0, 0, 0)
@@ -455,13 +455,7 @@ class TestRectangle_stdout(unittest.TestCase):
 
     @staticmethod
     def capture_stdout(rect, method):
-        """Captures and returns text printed to stdout.
-
-        Args:
-            rect (Rectangle): The Rectangle to print to stdout.
-            method (str): The method to run on rect.
-        Returns:
-            The text printed to stdout by calling method on sq.
+        """Captures and returns text printed to stdout..
         """
         capture = io.StringIO()
         sys.stdout = capture
@@ -536,7 +530,7 @@ class TestRectangle_stdout(unittest.TestCase):
 
 
 class TestRectangle_update_args(unittest.TestCase):
-    """Unittests for testing update args method of the Rectangle class."""
+    """Unittests for testing update args method"""
 
     # Test args
     def test_update_args_zero(self):
@@ -674,7 +668,7 @@ class TestRectangle_update_args(unittest.TestCase):
 
 
 class TestRectangle_update_kwargs(unittest.TestCase):
-    """Unittests for testing update kwargs method of the Rectangle class."""
+    """Unittests for testing update kwargs method."""
 
     def test_update_kwargs_one(self):
         r = Rectangle(10, 10, 10, 10, 10)
