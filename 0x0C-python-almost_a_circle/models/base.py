@@ -1,5 +1,5 @@
 !/usr/bin/python3
-"""Mofuoe that Defines a base model class."""
+"""Module that Defines a base model class."""
 import json
 import csv
 import turtle
