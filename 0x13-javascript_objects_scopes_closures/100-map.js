@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// A script that imports an array and computes a new array.
+// script that imports an array and computes a new arr.
 
 const originalList = require('./100-data').list;
 console.log(originalList);
